@@ -14,6 +14,13 @@ end
 
 gem 'jquery-rails'
 
+group :development do
+  gem "machinist", '>= 2.0.0.beta2'
+end
+
 group :test do
-  gem 'turn', '~> 0.8.3', :require => false
+  gem 'turn', '~> 0.8.3', require: false
+  gem 'minitest'
+  gem 'simplecov', require: false
+  gem 'database_cleaner'
 end

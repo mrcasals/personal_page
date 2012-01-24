@@ -16,8 +16,13 @@ describe Book do
       @book.valid?.must_equal false
     end
 
-    it 'is not valid without a rating' do
-      @book.rating = nil
+    it 'is not valid with a rating higher than 10' do
+      @book.rating = 11
+      @book.valid?.must_equal false
+    end
+
+    it 'is not valid with a rating lower than 0' do
+      @book.rating = -1
       @book.valid?.must_equal false
     end
 

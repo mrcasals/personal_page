@@ -4,6 +4,6 @@ class Post < ActiveRecord::Base
   validates :title, :body, presence: true
 
   # Relations
-  has_and_belongs_to_many :posts
+  has_and_belongs_to_many :tags
 
 end

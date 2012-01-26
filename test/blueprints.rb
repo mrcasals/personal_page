@@ -11,10 +11,8 @@ end
 Post.blueprint do
   title {"Post #{sn}"}
   body { "Lorem ipsum dolor sit amet"}
-  tags
 end
 
 Tag.blueprint do
   name {"Tag #{sn}"}
-  posts
 end

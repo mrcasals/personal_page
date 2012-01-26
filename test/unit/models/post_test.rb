@@ -5,6 +5,12 @@ describe Post do
     @post = Post.make
   end
 
+  describe 'relations' do
+    it 'has_and_belongs_to_many tags' do
+      @post.must_respond_to :tags
+    end
+  end
+
   describe 'validations' do
     it 'is not valid without a title' do
       @post.title = nil

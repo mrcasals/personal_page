@@ -11,4 +11,10 @@ end
 Post.blueprint do
   title {"Post #{sn}"}
   body { "Lorem ipsum dolor sit amet"}
+  tag
+end
+
+Tag.blueprint do
+  name {"Tag #{sn}"}
+  post
 end

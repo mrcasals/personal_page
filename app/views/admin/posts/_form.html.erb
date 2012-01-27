@@ -1,0 +1,4 @@
+<%= semantic_form_for [:admin, @post] do |f| %>
+  <%= f.inputs :title, :body, :tag_names %>
+  <%= f.buttons :commit %>
+<% end %>

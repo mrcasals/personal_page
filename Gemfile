@@ -7,6 +7,8 @@ gem 'activeadmin', git: 'git://github.com/gregbell/active_admin.git'
 gem 'sass-rails'
 gem 'meta_search',    '>= 1.1.0.pre'
 
+gem 'slim'
+
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'

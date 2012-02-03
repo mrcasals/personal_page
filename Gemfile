@@ -10,7 +10,7 @@ gem 'meta_search',    '>= 1.1.0.pre'
 gem 'slim'
 
 group :assets do
-  gem 'compass', git: 'https://github.com/chriseppstein/compass.git', branch: 'master'
+  gem 'compass-rails'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
 end

@@ -6,6 +6,8 @@ html
     = javascript_include_tag "application"
     = csrf_meta_tags
 
-  body
-    =render partial: 'layouts/sidebar'
-    = yield
+  body.bp.two-col
+    #container
+      =render partial: 'layouts/sidebar'
+      #content
+        = yield
